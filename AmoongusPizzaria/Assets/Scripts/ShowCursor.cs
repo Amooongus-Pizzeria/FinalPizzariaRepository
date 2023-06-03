@@ -14,7 +14,7 @@ public class ShowCursor : MonoBehaviour
     [SerializeField]
     private CursorMode _cursorMode = CursorMode.Auto;
 
-    void Start()
+    void Awake()
     {
         _hotspot = new Vector2(ReleasedState.width / 2, ReleasedState.height / 2);
         Cursor.SetCursor(ReleasedState, _hotspot, _cursorMode);
@@ -34,7 +34,7 @@ public class ShowCursor : MonoBehaviour
     */
 
 
-/*    private void OnMouseUp()
+    private void OnMouseUp()
     {
         Cursor.SetCursor(ReleasedState, _hotspot, _cursorMode);
     }
@@ -42,5 +42,5 @@ public class ShowCursor : MonoBehaviour
     private void OnMouseDown()
     {
         Cursor.SetCursor(PressedState, _hotspot, _cursorMode);
-    }*/
+    }
 }
