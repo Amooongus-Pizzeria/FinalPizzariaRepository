@@ -3441,7 +3441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1527725326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3456,7 +3456,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReleasedState: {fileID: 2800000, guid: da54f9dec5a042249bc7e6489155a1ac, type: 3}
   PressedState: {fileID: 2800000, guid: da54f9dec5a042249bc7e6489155a1ac, type: 3}
-  _hotspot: {x: 0.3, y: -0.3}
   _cursorMode: 0
 --- !u!4 &1527725327
 Transform:

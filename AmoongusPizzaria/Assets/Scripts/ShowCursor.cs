@@ -8,7 +8,7 @@ public class ShowCursor : MonoBehaviour
     private Texture2D ReleasedState;
     [SerializeField]
     private Texture2D PressedState;
-    [SerializeField]
+    // [SerializeField]
     private Vector2 _hotspot;
 
     [SerializeField]
@@ -16,12 +16,13 @@ public class ShowCursor : MonoBehaviour
 
     void Start()
     {
+        _hotspot = new Vector2(ReleasedState.width / 2, ReleasedState.height / 2);
         Cursor.SetCursor(ReleasedState, _hotspot, _cursorMode);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() { }
+/*    {
         if(Input.GetMouseButtonDown(0))
         {
           Cursor.SetCursor(PressedState, _hotspot, _cursorMode);
@@ -30,7 +31,8 @@ public class ShowCursor : MonoBehaviour
         {
           Cursor.SetCursor(ReleasedState, _hotspot, _cursorMode);
         }
-    }
+    */
+
 
 /*    private void OnMouseUp()
     {
