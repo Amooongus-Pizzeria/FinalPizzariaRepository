@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class DragObject : MonoBehaviour
 {
-    private bool isDragging = false;
-    private Vector3 offset;
+    public bool isDragging = false;
+    public Vector3 offset;
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         isDragging = true;
         offset = gameObject.transform.position - GetMouseWorldPosition();
     }
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
         isDragging = false;
     }
 
-    private void Update()
+    public void Update()
     {
         if (isDragging)
         {
@@ -25,7 +25,7 @@ public class DragObject : MonoBehaviour
         }
     }
 
-    private Vector3 GetMouseWorldPosition()
+    public Vector3 GetMouseWorldPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = -Camera.main.transform.position.z;
