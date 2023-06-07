@@ -20,10 +20,10 @@ public class ToppingSpawner : MonoBehaviour
         Debug.Log(mousePos.x);
         Debug.Log(mousePos.y);
 
-        //GameObject toppingClone = Instantiate(toppingOriginal, new Vector3(-263, -144, 0), Quaternion.identity);
-
+        //GameObject toppingClone = Instantiate(toppingOriginal, mousePos, Quaternion.Euler(new Vector3(90, Random.Range(0, 360), 0)), toppingParent);
 
         GameObject toppingClone = Instantiate(toppingOriginal, toppingParent, true);
+
 
 
         toppingClone.GetComponent<SpriteRenderer>().sortingOrder = 5; //random # for testing temporarily
