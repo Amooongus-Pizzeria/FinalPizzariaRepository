@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ToppingDistanceCalculator : MonoBehaviour
 {
@@ -7,6 +8,13 @@ public class ToppingDistanceCalculator : MonoBehaviour
     public int pairCount = 0;
     public float totalDistance = 0f;
     public float averageDistance;
+
+    public bool isEvenlySpaced;
+
+    //CalculateScoring scoringScript;
+
+    public double pizzaMoney = 12.55;
+
     private void Start()
     {
         String parentObjectName = this.parentObject.name;
@@ -15,14 +23,14 @@ public class ToppingDistanceCalculator : MonoBehaviour
     }
     private void Update()
     {
-        //CalculateDistanceBetweenToppings();
-        //if(Input)
+        // CalculateDistanceBetweenToppings();
     }
-    private void CalculateDistanceBetweenToppings()
+    public void CalculateDistanceBetweenToppings()
     {
         if (parentObject != null)
         {
-            Transform[] children = parentObject.GetComponentsInChildren<Transform>();
+            Transform[] children = parentObject.transform.GetComponentsInChildren<Transform>();
+
 
             for (int i = 0; i < children.Length; i++)
             {
@@ -46,5 +54,27 @@ public class ToppingDistanceCalculator : MonoBehaviour
             Debug.LogError("ParentObject not found!");
         }
 
+    }
+
+    public void calculateScoring()
+    {
+        if(averageDistance > 0.35 && averageDistance < 0.6)
+        {
+            isEvenlySpaced = true;
+        }
+    }
+
+    public void calculateMoneyEarned()
+    {
+        if (!isEvenlySpaced)
+        {
+            pizzaMoney *= .8;
+        }
+
+    }   
+
+    public void returnTotalMoney()
+    {
+        Debug.Log(pizzaMoney);
     }
 }
