@@ -16,6 +16,7 @@ public class cheeseandsauce : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         this.gameObject.GetComponent<SpriteRenderer>().sprite = containerObject;
 
+
     }
 
     // Update is called once per frame
