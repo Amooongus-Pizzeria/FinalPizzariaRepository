@@ -17,8 +17,8 @@ public class ToppingSpawner : MonoBehaviour
     void createTopping()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log(mousePos.x);
-        Debug.Log(mousePos.y);
+        //Debug.Log(mousePos.x);
+        //Debug.Log(mousePos.y);
 
         //GameObject toppingClone = Instantiate(toppingOriginal, mousePos, Quaternion.Euler(new Vector3(90, Random.Range(0, 360), 0)), toppingParent);
 
