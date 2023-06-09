@@ -12,25 +12,28 @@ public class ToppingDistanceCalculator : MonoBehaviour
     }
     private void Update()
     {
-        CalculateDistanceBetweenParentAndChild();
+        CalculateDistanceBetweenToppings();
     }
-    private void CalculateDistanceBetweenParentAndChild()
+    private void CalculateDistanceBetweenToppings()
     {
         if (parentObject != null)
         {
-            for (int i = 0; i < parentObject.transform.childCount; i++)
+            Transform[] children = parentObject.GetComponentsInChildren<Transform>();
+
+            for (int i = 0; i < children.Length; i++)
             {
-                Transform child = parentObject.transform.GetChild(i);
+                for (int j = i + 1; j < children.Length; j++)
+                {
+                    float distance = Vector3.Distance(children[i].position, children[j].position);
 
-                float distance = Vector3.Distance(parentObject.transform.position, child.position);
-
-                Debug.Log("Distance between " + parentObject.name + " and " + child.name + ": " + distance);
+                    Debug.Log("Distance between " + children[i].name + " and " + children[j].name + ": " + distance);
+                }
             }
         }
         else
         {
             Debug.LogError("ParentObject not found!");
         }
+
     }
-    
 }
