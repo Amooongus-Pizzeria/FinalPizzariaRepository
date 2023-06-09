@@ -684,6 +684,7 @@ GameObject:
   - component: {fileID: 494133792}
   - component: {fileID: 494133793}
   - component: {fileID: 494133794}
+  - component: {fileID: 494133795}
   m_Layer: 0
   m_Name: Testing Pizza
   m_TagString: Interactable
@@ -836,6 +837,19 @@ MonoBehaviour:
   moveDuration: 5
   initialPosition: {fileID: 396901055}
   hasRanOverOven: 0
+--- !u!114 &494133795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494133786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9531bf0d0ec2c05469374ffbdab40e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentObject: {fileID: 494133786}
 --- !u!1 &508509673
 GameObject:
   m_ObjectHideFlags: 0

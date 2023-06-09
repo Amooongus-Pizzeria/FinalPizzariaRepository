@@ -60,7 +60,7 @@ public class ColorController : MonoBehaviour
         }
 
         // Ensure final position accuracy
-        transform.position = targetPosition.position;
+        // transform.position = targetPosition.position;
 
         // Coroutine has finished
         Debug.Log("Object reached the target location.");
