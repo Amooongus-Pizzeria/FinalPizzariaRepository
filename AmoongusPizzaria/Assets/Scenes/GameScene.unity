@@ -1343,10 +1343,10 @@ GameObject:
   m_Component:
   - component: {fileID: 512569876}
   - component: {fileID: 512569878}
-  - component: {fileID: 512569879}
   - component: {fileID: 512569881}
   - component: {fileID: 512569882}
   - component: {fileID: 512569883}
+  - component: {fileID: 512569884}
   m_Layer: 0
   m_Name: Cheese
   m_TagString: Untagged
@@ -1409,7 +1409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1159202929, guid: 25ea8ad22454340d1b103e01d65419a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1421,19 +1421,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &512569879
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512569875}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 7.4228497, y: 6.124014, z: 0.19999999}
-  m_Center: {x: 0.16926658, y: -2.931449, z: 0}
 --- !u!114 &512569881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,6 +1469,22 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 2147483647
+--- !u!58 &512569884
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512569875}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0001449585, y: -1.72}
+  serializedVersion: 2
+  m_Radius: 2.3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
