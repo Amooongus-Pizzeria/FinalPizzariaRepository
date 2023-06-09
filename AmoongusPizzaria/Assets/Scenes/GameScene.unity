@@ -1452,7 +1452,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   containerObject: {fileID: 1159202929, guid: 25ea8ad22454340d1b103e01d65419a7, type: 3}
   placedObject: {fileID: -1230630470, guid: 25ea8ad22454340d1b103e01d65419a7, type: 3}
-  scalingSize: 0.8
+  scalingSize: 0.78
 --- !u!114 &512569883
 MonoBehaviour:
   m_ObjectHideFlags: 0

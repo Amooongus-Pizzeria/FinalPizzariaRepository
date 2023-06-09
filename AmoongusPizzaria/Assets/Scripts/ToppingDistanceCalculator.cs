@@ -15,7 +15,8 @@ public class ToppingDistanceCalculator : MonoBehaviour
     }
     private void Update()
     {
-        CalculateDistanceBetweenToppings();
+        //CalculateDistanceBetweenToppings();
+        //if(Input)
     }
     private void CalculateDistanceBetweenToppings()
     {
