@@ -351,9 +351,9 @@ GameObject:
   - component: {fileID: 86585536}
   - component: {fileID: 86585540}
   - component: {fileID: 86585539}
-  - component: {fileID: 86585538}
   - component: {fileID: 86585537}
   - component: {fileID: 86585541}
+  - component: {fileID: 86585542}
   m_Layer: 0
   m_Name: RedSauce
   m_TagString: Untagged
@@ -392,22 +392,6 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!58 &86585538
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86585535}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.1425931, y: -1.8489441}
-  serializedVersion: 2
-  m_Radius: 6.2003827
 --- !u!114 &86585539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +476,22 @@ MonoBehaviour:
   containerObject: {fileID: 21300000, guid: 038c4e2eaeddf47dbb54446cb65b24d3, type: 3}
   placedObject: {fileID: 21300000, guid: 5ddf507ffa1f6423e829f4c431265709, type: 3}
   scalingSize: 0.67
+--- !u!58 &86585542
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86585535}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00009918213, y: -1.97}
+  serializedVersion: 2
+  m_Radius: 5.19
 --- !u!1 &245563922
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,9 +893,9 @@ GameObject:
   - component: {fileID: 370574538}
   - component: {fileID: 370574542}
   - component: {fileID: 370574541}
-  - component: {fileID: 370574540}
   - component: {fileID: 370574539}
   - component: {fileID: 370574543}
+  - component: {fileID: 370574544}
   m_Layer: 0
   m_Name: BlueSauce
   m_TagString: Untagged
@@ -934,22 +934,6 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!58 &370574540
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370574537}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.2902428}
-  serializedVersion: 2
-  m_Radius: 10.375859
 --- !u!114 &370574541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,6 +1018,22 @@ MonoBehaviour:
   containerObject: {fileID: 21300000, guid: 2d786badeb43f4aaaae86187f0fc9bcd, type: 3}
   placedObject: {fileID: 21300000, guid: 593dbbbb8f5f34af6b69e262ae208d0a, type: 3}
   scalingSize: 0.67
+--- !u!58 &370574544
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370574537}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0002746582, y: -1.95}
+  serializedVersion: 2
+  m_Radius: 4.68
 --- !u!1 &396901054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,6 +1246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentObject: {fileID: 494133786}
+  pairCount: 0
+  totalDistance: 0
+  averageDistance: 0
 --- !u!1 &508509673
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,9 +1626,9 @@ GameObject:
   - component: {fileID: 529753779}
   - component: {fileID: 529753783}
   - component: {fileID: 529753782}
-  - component: {fileID: 529753781}
   - component: {fileID: 529753780}
   - component: {fileID: 529753784}
+  - component: {fileID: 529753785}
   m_Layer: 0
   m_Name: GreenSauce
   m_TagString: Untagged
@@ -1664,22 +1667,6 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 2147483647
---- !u!58 &529753781
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529753778}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.7101216, y: -1.7701505}
-  serializedVersion: 2
-  m_Radius: 8.796814
 --- !u!114 &529753782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1764,6 +1751,22 @@ MonoBehaviour:
   containerObject: {fileID: 21300000, guid: 717d3fab6e118494ea26fc63387b85e1, type: 3}
   placedObject: {fileID: 21300000, guid: b9c31407a43d44b5b9fa591ff2caf37b, type: 3}
   scalingSize: 0.67
+--- !u!58 &529753785
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529753778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000091552734, y: -1.51}
+  serializedVersion: 2
+  m_Radius: 4.98
 --- !u!1 &537527377
 GameObject:
   m_ObjectHideFlags: 0
